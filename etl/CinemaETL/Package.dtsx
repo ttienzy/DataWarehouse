@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{A6B09924-0A09-4AC8-AE34-55A1528C2775}">
+  DTS:VersionBuild="36"
+  DTS:VersionGUID="{ED21387D-547D-407B-8DAA-1D3AFDFC9057}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUcsZ3EJZAkaDjXi17/c5dgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACKTcKpmJlDx8ep4jTNm0j0mmcogUNUpkWy0tpdLX/PqAAAAAAOgAAAAAIAACAAAAD1FlHjx1eOTnCQRZG9H3dET8XYvyCgKqXc9WkC+EH4KxAAAACnww1LEjYx1qRYe7+VvAgEQAAAAGQzAoFFDLaSXafh3EFj2I/tGomfYIIvFW7MeHsGmVu94Irz23q4OmorPo90ersPF+DgDyZ1/2DGq6trNQTXR2g</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUcsZ3EJZAkaDjXi17/c5dgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADkJR1yfUz7qYTVud39flWH5UWXqIGhVoBBPFbcyZgfxwAAAAAOgAAAAAIAACAAAAB3GcODGpj3nBNvr6XoV2mSHmDCAXRAO//xBeGTuhdi6BAAAABEKiIIggwR3TbU+5ufeJJxQAAAALQcHQXOFpHl/ZVjjQiWeXutw2LzE1LycvFIYJDLST/PjH+OdfsqWNhYQTCd9Uc4vhMZFKzVLt16Tga/QBlWIJ4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUcsZ3EJZAkaDjXi17/c5dgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAApZbsMjxYZgVLfbebLQokaOE8av+90KDvitLQmG0ezEQAAAAAOgAAAAAIAACAAAACVV9Fj/h0gu9JXZN9UQI1QVyTPIVIn3b6ZdkyfMBctkBAAAAD5QXyXihz1ufv3vwC654r3QAAAAPBH+TjT+Xk3zJcO+W0rVDXlkoeAyy7M4ilL34ReGl0TdhEKdYn8imrMc71uhHiM5rLv4B/sLDLcYO5Bc1Ax8K8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUcsZ3EJZAkaDjXi17/c5dgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABQtnTWgiVdFk9e6n8MWlr+83LV4s/SjwE2myK+tJMxHgAAAAAOgAAAAAIAACAAAADJ4wobsnv4/o39BLER6+FvprDWrypIpIzxppelNuRaRhAAAACGV1t+3CGrSHmQvSf6Dz/mQAAAAPH9d3N1zRHj7sryETLPLiMfyZMAa3ojJWD9cr44MPbp3IunAkA8n5V+e1s/XwBiPx9iSO83xUsenrO1kmOvDmw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUcsZ3EJZAkaDjXi17/c5dgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABKFPXoMVKBej2atlGt6rkysJ0yBkSNkOzq3M1zhMxcwQAAAAAOgAAAAAIAACAAAAB5wp0jBaKPzJgx3A+0d+SAGQiMS80XN+bBib+bTOegkRAAAAAZ29z1TOdOTN8cyE23DiThQAAAAED/yYSdedTj27ObLfVT9VQK/uVX5fb4aNl8gEUPPvohSY7fTbTz143gSt+Rsmx27ZAkxV3MAyc/hKkTl8P/rsE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUcsZ3EJZAkaDjXi17/c5dgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADs8kXe+FSKiDc7Awm7MNZ86sZeVifnxkAERHLM5e5BkQAAAAAOgAAAAAIAACAAAAAoHOo8HuTwVYgZpgciydwEXUM8tAk3kKyDroIkMOUIjhAAAAAFk3RWnOHPtq1LcJ9IgaBsQAAAAMZdjdFmEZCGDZbvl73qzLc3GdHqFIhlbPY20YondDCw+I/m190uSJgTVfLRpAOAww+gtzCeQa0LBevjvTKFDIQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1120,6 +1120,203 @@
           version="1">
           <components>
             <component
+              refId="Package\DFT - Load Dim_Date\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Dim_Date]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Load Dim_Date\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.CinemaDataWarehouse.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.CinemaDataWarehouse.sa]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DateKey]"
+                      cachedDataType="i4"
+                      cachedName="DateKey"
+                      externalMetadataColumnId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DateKey]"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[DateKey]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FullDate]"
+                      cachedDataType="dbDate"
+                      cachedName="FullDate"
+                      externalMetadataColumnId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FullDate]"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[FullDate]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DayName]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="DayName"
+                      externalMetadataColumnId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DayName]"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[DayName]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DayOfWeek]"
+                      cachedDataType="i4"
+                      cachedName="DayOfWeek"
+                      externalMetadataColumnId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DayOfWeek]"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[DayOfWeek]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Month]"
+                      cachedDataType="i4"
+                      cachedName="Month"
+                      externalMetadataColumnId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Month]"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[Month]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MonthName]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="MonthName"
+                      externalMetadataColumnId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MonthName]"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[MonthName]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Quarter]"
+                      cachedDataType="i4"
+                      cachedName="Quarter"
+                      externalMetadataColumnId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Quarter]"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[Quarter]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      externalMetadataColumnId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IsWeekend]"
+                      cachedDataType="bool"
+                      cachedName="IsWeekend"
+                      externalMetadataColumnId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IsWeekend]"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[IsWeekend]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DateKey]"
+                      dataType="i4"
+                      name="DateKey" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FullDate]"
+                      dataType="dbDate"
+                      name="FullDate" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DayName]"
+                      dataType="wstr"
+                      length="20"
+                      name="DayName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DayOfWeek]"
+                      dataType="i4"
+                      name="DayOfWeek" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Month]"
+                      dataType="i4"
+                      name="Month" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MonthName]"
+                      dataType="wstr"
+                      length="20"
+                      name="MonthName" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Quarter]"
+                      dataType="i4"
+                      name="Quarter" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IsWeekend]"
+                      dataType="bool"
+                      name="IsWeekend" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load Dim_Date\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Dim_Date\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load Dim_Date\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Dim_Date\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;13"
@@ -1403,37 +1600,45 @@ public class ScriptMain : UserComponent
     public override void CreateNewOutputRows()
     {
         // *** B?N C� TH? THAY ??I NG�Y B?T ??U V� K?T TH�C ? ?�Y ***
+        // ----- CẤU HÌNH KHOẢNG THỜI GIAN BẠN MUỐN TẠO -----
+        // Hãy đảm bảo khoảng thời gian này bao trùm toàn bộ dữ liệu booking của bạn.
         DateTime startDate = new DateTime(2022, 1, 1);
         DateTime endDate = new DateTime(2026, 12, 31);
+        // ----------------------------------------------------
 
+        // Bắt đầu vòng lặp từ ngày bắt đầu đến ngày kết thúc
         for (DateTime currentDate = startDate; currentDate <= endDate; currentDate = currentDate.AddDays(1))
         {
-            // Th�m m?t d�ng m?i v�o lu?ng d? li?u
-            Output0Buffer.AddRow();
+            // Thêm một dòng mới vào bộ đệm đầu ra (output buffer)
+            // Tên của buffer chính là tên Output bạn đã đặt ở Bước 1 (ví dụ: DateStreamBuffer)
+            DateStreamBuffer.AddRow();
 
-            // G�n gi� tr? cho t?ng c?t
-            Output0Buffer.DateKey = int.Parse(currentDate.ToString("yyyyMMdd"));
-            Output0Buffer.FullDate = currentDate;
-            Output0Buffer.Year = currentDate.Year;
-            Output0Buffer.Quarter = (currentDate.Month - 1) / 3 + 1;
-            Output0Buffer.Month = currentDate.Month;
+            // Gán giá trị cho từng cột bạn đã định nghĩa
+            DateStreamBuffer.DateKey = int.Parse(currentDate.ToString("yyyyMMdd"));
+            DateStreamBuffer.FullDate = currentDate;
+            DateStreamBuffer.Year = currentDate.Year;
+            DateStreamBuffer.Quarter = (currentDate.Month - 1) / 3 + 1;
+            DateStreamBuffer.Month = currentDate.Month;
 
-            // L?y t�n ng�y v� th? trong tu?n theo v?n h�a Vi?t Nam
+            // Sử dụng văn hóa "vi-VN" để lấy tên Tiếng Việt
             System.Globalization.CultureInfo ci = new System.Globalization.CultureInfo("vi-VN");
-            Output0Buffer.DayName = ci.DateTimeFormat.GetDayName(currentDate.DayOfWeek);
+            DateStreamBuffer.MonthName = "Tháng " + currentDate.Month.ToString();
+            DateStreamBuffer.DayName = ci.DateTimeFormat.GetDayName(currentDate.DayOfWeek);
 
-            // DayOfWeek (1=Ch? Nh?t, 2=Th? Hai, ..., 7=Th? B?y)
-            Output0Buffer.DayOfWeek = (int)currentDate.DayOfWeek + 1;
+            // DayOfWeek trong .NET bắt đầu từ 0 (Sunday). SQL thường bắt đầu từ 1.
+            DateStreamBuffer.DayOfWeek = (int)currentDate.DayOfWeek + 1;
 
+            // Kiểm tra xem có phải cuối tuần không
             if (currentDate.DayOfWeek == DayOfWeek.Saturday || currentDate.DayOfWeek == DayOfWeek.Sunday)
             {
-                Output0Buffer.IsWeekend = true;
+                DateStreamBuffer.IsWeekend = true;
             }
             else
             {
-                Output0Buffer.IsWeekend = false;
+                DateStreamBuffer.IsWeekend = false;
             }
         }
+
 
     }
 
@@ -1456,22 +1661,22 @@ using System.Data;
 using Microsoft.SqlServer.Dts.Pipeline;
 using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
 
-public class Output0Buffer: ScriptBuffer
+public class DateStreamBuffer: ScriptBuffer
 
 {
-    public Output0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+    public DateStreamBuffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
         : base(Buffer, BufferColumnIndexes, OutputMap)
     {
     }
 
-    public Boolean IsWeekend
+    public Int32 DateKey
     {
         set
         {
             this[0] = value;
         }
     }
-    public bool IsWeekend_IsNull
+    public bool DateKey_IsNull
     {
         set
         {
@@ -1486,14 +1691,14 @@ public class Output0Buffer: ScriptBuffer
         }
     }
 
-    public Int32 Year
+    public DateTime FullDate
     {
         set
         {
             this[1] = value;
         }
     }
-    public bool Year_IsNull
+    public bool FullDate_IsNull
     {
         set
         {
@@ -1508,14 +1713,14 @@ public class Output0Buffer: ScriptBuffer
         }
     }
 
-    public Int32 Quarter
+    public String DayName
     {
         set
         {
             this[2] = value;
         }
     }
-    public bool Quarter_IsNull
+    public bool DayName_IsNull
     {
         set
         {
@@ -1530,14 +1735,14 @@ public class Output0Buffer: ScriptBuffer
         }
     }
 
-    public Int32 Month
+    public Int32 DayOfWeek
     {
         set
         {
             this[3] = value;
         }
     }
-    public bool Month_IsNull
+    public bool DayOfWeek_IsNull
     {
         set
         {
@@ -1552,14 +1757,14 @@ public class Output0Buffer: ScriptBuffer
         }
     }
 
-    public Int32 DayOfWeek
+    public Int32 Month
     {
         set
         {
             this[4] = value;
         }
     }
-    public bool DayOfWeek_IsNull
+    public bool Month_IsNull
     {
         set
         {
@@ -1574,14 +1779,14 @@ public class Output0Buffer: ScriptBuffer
         }
     }
 
-    public String DayName
+    public String MonthName
     {
         set
         {
             this[5] = value;
         }
     }
-    public bool DayName_IsNull
+    public bool MonthName_IsNull
     {
         set
         {
@@ -1596,14 +1801,14 @@ public class Output0Buffer: ScriptBuffer
         }
     }
 
-    public DateTime FullDate
+    public Int32 Quarter
     {
         set
         {
             this[6] = value;
         }
     }
-    public bool FullDate_IsNull
+    public bool Quarter_IsNull
     {
         set
         {
@@ -1618,20 +1823,42 @@ public class Output0Buffer: ScriptBuffer
         }
     }
 
-    public Int32 DateKey
+    public Int32 Year
     {
         set
         {
             this[7] = value;
         }
     }
-    public bool DateKey_IsNull
+    public bool Year_IsNull
     {
         set
         {
             if (value)
             {
                 SetNull(7);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Boolean IsWeekend
+    {
+        set
+        {
+            this[8] = value;
+        }
+    }
+    public bool IsWeekend_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(8);
             }
             else
             {
@@ -1716,7 +1943,7 @@ public class UserComponent: ScriptComponent
         Variables = new Variables(this);
     }
 
-    public Output0Buffer Output0Buffer;
+    public DateStreamBuffer DateStreamBuffer;
 
     public virtual void FinishOutputs()
     {
@@ -1725,10 +1952,10 @@ public class UserComponent: ScriptComponent
     private void MarkOutputsFinished()
     {
 
-        if (null != Output0Buffer)
+        if (null != DateStreamBuffer)
         {
-            Output0Buffer.SetEndOfRowset();
-            Output0Buffer = null;
+            DateStreamBuffer.SetEndOfRowset();
+            DateStreamBuffer = null;
         }
 
     }
@@ -1737,9 +1964,9 @@ public class UserComponent: ScriptComponent
     {
        for(int Idx = 0; Idx < Outputs; Idx++)
        {
-            if(OutputIDs[Idx] == GetOutputID(OutputMap, @"Output 0"))
+            if(OutputIDs[Idx] == GetOutputID(OutputMap, @"DateStream"))
             {
-                Output0Buffer = new Output0Buffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
+                DateStreamBuffer = new DateStreamBuffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
             }
         }
 
@@ -1784,23 +2011,23 @@ public class Variables
                       dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
                     <arrayElement
                       dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
   <msb:PropertyGroup>
-    <msb:Language>msBuild</msb:Language>
     <msb:CodeName>SC_4050fcbd958b4333962b1cbdba5a3ae8</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_4050fcbd958b4333962b1cbdba5a3ae8</msb:DisplayName>
-    <msb:ProjectId>{3B479B6E-12A5-4D7C-910A-3337116CD89D}</msb:ProjectId>
+    <msb:ProjectId>{DF4837FB-B3B1-49E6-93AC-7DD52CCD08CA}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_4050fcbd958b4333962b1cbdba5a3ae8.csproj" />
     <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
     <msb:File Include="Properties\Settings.settings" />
     <msb:File Include="Properties\AssemblyInfo.cs" />
     <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="main.cs" />
-    <msb:File Include="BufferWrapper.cs" />
     <msb:File Include="Properties\Settings.Designer.cs" />
-    <msb:File Include="ComponentWrapper.cs" />
   </msb:ItemGroup>
 </c:Project>]]></arrayElement>
                     <arrayElement
@@ -1821,9 +2048,10 @@ public class Variables
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SC_4050fcbd958b4333962b1cbdba5a3ae8</RootNamespace>
     <AssemblyName>SC_4050fcbd958b4333962b1cbdba5a3ae8</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1993,140 +2221,123 @@ namespace SC_4050fcbd958b4333962b1cbdba5a3ae8.Properties {
                     <arrayElement
                       dataType="System.String"><![CDATA[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
-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
+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
-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
+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
-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
-AgBKBgAAAwD+BAAAAQACAwAAAQACAwAAAQACAwAAAQACAwAAAQACAwAAAQACAwAAAQACAwAAAQAC
-AwAAAQACAwAAAQACAwAAAQACAwAAAQACAwAAAQACAwAAAQACAwAAAQACAwAAAQACAwAAAQCSBgAA
-AgBxBQAAAwCEBgAABAD+BAAAAQAPBwAAAQAPBwAAAQACAwkAZAUBABEAZAUGABkAZAUKACkAZAUQ
-ADEAZAUQADkAZAUQAEEAZAUQAEkAZAUQAFEAZAUQAFkAZAUQAGEAZAUQAGkAZAUGAKkAZAUGAMEA
-ZAUVANEAZAUGAJkA6wIGAJkA9gIGAHEAZAUkAHEAIgMrANkAJQEwAHEACAU1AHEAKwM1AHkAZAUQ
-AHkAtgY5AHEAPwM+AOEAqwBDAHEArgZJAHEAWwNPAIEAZAVXAIEATARhAIEARAQBAPkAZAUQAIEA
-YwcGAIEA0AYGAIEA0wZnAJkAZAUGAJkANABvAJkAXgZ2AKEAZAUGAAEBjQB8AAEBdgeFALEAZAWL
-AMkAZAUGAC4ACwAXAS4AEwAgAS4AGwA/AS4AIwBIAS4AKwBxAS4AMwBxAS4AOwBxAS4AQwBIAS4A
-SwB3AS4AUwBxAS4AWwCOAUMAYwDcAeMAawDcAQEBewDcASkCcwA/AUkCcwA/ARsAawADAAEABwAR
-AAgAEwAAAGEA9wAAALAD9wAAABUF+wAAABIE9wAAAFwF+wAAACIE9wAAADkD+wAAAOwD9wAAAFED
-+wAAAP0D9wAAAK4A/wAAAMUD9wAAAC8BAwEAANgD9wAAAG4H+wAAADUE9wAAAEgFCAEAAAUBDQEA
-AOMGEgEBAAYAAwABAAcABQABAAgABwABAAkACQABAAoACwABAAsADQABAAwADwABAA0AEQABAA4A
-EwABAA8AFQABABAAFwABABEAGQABABIAGwABABMAHQABABQAHwABABUAIQACACEAIwACACIAJQAB
-ACMAJQACACQAJwAEgAAAAQAAAAAAAAAAAAAAAAAHAAAABAAAAAAAAAAAAAAAkwBAAAAAAAAQAAAA
-AAAAAAAAAACcABkHAAAAABAAAAAAAAAAAAAAAJwANgcAAAAABAAAAAAAAAAAAAAAkwBVBAAAAAAA
-AAAAAQAAAL8FAAAAAAAAAEludDMyAFNDXzQwNTBmY2JkOTU4YjQzMzM5NjJiMWNiZGJhNWEzYWU4
-ADxNb2R1bGU+AEdldE91dHB1dElEAG1zY29ybGliAE1hcmtPdXRwdXRzRmluaXNoZWQAc2V0X0lz
-V2Vla2VuZABkZWZhdWx0SW5zdGFuY2UAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5k
-bGUAc2V0X0RheU5hbWUAR2V0RGF5TmFtZQBEYXRlVGltZQBNaWNyb3NvZnQuU3FsU2VydmVyLkR0
-cy5QaXBlbGluZQBUeXBlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAHJlc291cmNlQ3VsdHVyZQBB
-cHBsaWNhdGlvblNldHRpbmdzQmFzZQBQYXJzZQBzZXRfRnVsbERhdGUARWRpdG9yQnJvd3NhYmxl
-U3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJp
-YnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBBc3NlbWJs
-eVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZyYW1ld29y
-a0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlw
-dGlvbkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2VtYmx5UHJv
-ZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0Q29tcG9u
-ZW50RW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNv
-bXBhdGliaWxpdHlBdHRyaWJ1dGUAUHJlRXhlY3V0ZQBQb3N0RXhlY3V0ZQB2YWx1ZQBTeXN0ZW0u
-UnVudGltZS5WZXJzaW9uaW5nAFRvU3RyaW5nAGdldF9Nb250aABzZXRfTW9udGgAZ2V0X0RheU9m
-V2VlawBzZXRfRGF5T2ZXZWVrAG9wX0xlc3NUaGFuT3JFcXVhbABTeXN0ZW0uQ29tcG9uZW50TW9k
-ZWwAU0NfNDA1MGZjYmQ5NThiNDMzMzk2MmIxY2JkYmE1YTNhZTguZGxsAHNldF9Jc1dlZWtlbmRf
-SXNOdWxsAHNldF9EYXlOYW1lX0lzTnVsbABzZXRfRnVsbERhdGVfSXNOdWxsAHNldF9Nb250aF9J
-c051bGwAc2V0X0RheU9mV2Vla19Jc051bGwAc2V0X1llYXJfSXNOdWxsAHNldF9RdWFydGVyX0lz
-TnVsbABzZXRfRGF0ZUtleV9Jc051bGwAU2V0TnVsbABzZXRfSXRlbQBTeXN0ZW0AcmVzb3VyY2VN
-YW4AQm9vbGVhbgBTY3JpcHRNYWluAFN5c3RlbS5Db25maWd1cmF0aW9uAFN5c3RlbS5HbG9iYWxp
-emF0aW9uAFN5c3RlbS5SZWZsZWN0aW9uAEludmFsaWRPcGVyYXRpb25FeGNlcHRpb24AQ3VsdHVy
-ZUluZm8ARGF0ZVRpbWVGb3JtYXRJbmZvAE91dHB1dE5hbWVNYXAAT3V0cHV0TWFwAGdldF9ZZWFy
-AHNldF9ZZWFyAE91dHB1dDBCdWZmZXIAUGlwZWxpbmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9S
-ZXNvdXJjZU1hbmFnZXIAc2V0X1F1YXJ0ZXIALmN0b3IALmNjdG9yAE91dHB1dElEcwBTeXN0ZW0u
-RGlhZ25vc3RpY3MAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBTeXN0ZW0uUmVzb3Vy
-Y2VzAFNDXzQwNTBmY2JkOTU4YjQzMzM5NjJiMWNiZGJhNWEzYWU4LlByb3BlcnRpZXMuUmVzb3Vy
-Y2VzLnJlc291cmNlcwBEZWJ1Z2dpbmdNb2RlcwBTQ180MDUwZmNiZDk1OGI0MzMzOTYyYjFjYmRi
-YTVhM2FlOC5Qcm9wZXJ0aWVzAFZhcmlhYmxlcwBCdWZmZXJDb2x1bW5JbmRleGVzAEdldENvbHVt
-bkluZGV4ZXMAU2V0dGluZ3MAQ29ubmVjdGlvbnMAQnVmZmVycwBGaW5pc2hPdXRwdXRzAENyZWF0
-ZU5ld091dHB1dFJvd3MAQWRkRGF5cwBnZXRfRGF0ZVRpbWVGb3JtYXQAT2JqZWN0AFNldEVuZE9m
-Um93c2V0AGdldF9EZWZhdWx0AFVzZXJDb21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNjcmlwdENv
-bXBvbmVudABNaWNyb3NvZnQuU3FsU2VydmVyLlR4U2NyaXB0AE1pY3Jvc29mdC5TcWxTZXJ2ZXIu
-UGlwZWxpbmVIb3N0AFByaW1lT3V0cHV0AEFkZFJvdwBzZXRfRGF0ZUtleQBnZXRfQXNzZW1ibHkA
-AAAReQB5AHkAeQBNAE0AZABkAAALdgBpAC0AVgBOAAGAm0kAcwBOAHUAbABsACAAcAByAG8AcABl
-AHIAdAB5ACAAYwBhAG4AbgBvAHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBsAHMAZQAuACAA
-QQBzAHMAaQBnAG4AIABhACAAdgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8AbAB1AG0AbgAg
-AGkAbgBzAHQAZQBhAGQALgAAEU8AdQB0AHAAdQB0ACAAMAAAcVMAQwBfADQAMAA1ADAAZgBjAGIA
-ZAA5ADUAOABiADQAMwAzADMAOQA2ADIAYgAxAGMAYgBkAGIAYQA1AGEAMwBhAGUAOAAuAFAAcgBv
-AHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAALKtRLRuyR0mLnfZmoHnd6AAEIAEB
-CAMgAAEFIAEBEREEIAEBDgUgAQERXQgHAxE5ETkSPQYgAwEICAgEIAEODgQAAQgOAyAACAQgABJx
-BCAAEXUFIAEOEXUFIAEROQ0HAAICETkROQkgAwESRR0IEkkFIAIBCBwDIAACAwcBCAYAAggSSQ4F
-IAEdCAgIAAESgIERgIUFIAASgIkHIAIBDhKAiQi3elxWGTTgiQiJhF3NgIDMkQMGEhQDBhIYAwYS
-DAMGEk0DBhJZAwYSPQMGEiAEIAEBAgUgAQEROQsgBAEIHQgdEkUSSQUgAQESTQQAABJZBAAAEj0F
-AAEBEj0EAAASIAMAAAEDKAACAygACAMoAA4EKAAROQQIABJZBAgAEj0ECAASIAgBAAgAAAAAAB4B
-AAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAAAAAoAQAjU0NfNDA1MGZjYmQ5NThi
-NDMzMzk2MmIxY2JkYmE1YTNhZTgAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAyNQAATQEAHC5O
-RVRGcmFtZXdvcmssVmVyc2lvbj12NC43LjIBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lFC5ORVQg
-RnJhbWV3b3JrIDQuNy4yBAEAAAAAAAC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMu
-UmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJh
-bCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRp
-bWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAAPDcAAAAAAAAAAAAAVjcAAAAgAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAEg3AAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwA
-AAAAAP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgA
-AABYQAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAA
-AL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAA
-AQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAA
-AAAAAACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAwADAA
-MAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5
-AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAA
-UwBDAF8ANAAwADUAMABmAGMAYgBkADkANQA4AGIANAAzADMAMwA5ADYAMgBiADEAYwBiAGQAYgBh
-ADUAYQAzAGEAZQA4AAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADAA
-LgAwAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwA0ADAANQAwAGYAYwBi
-AGQAOQA1ADgAYgA0ADMAMwAzADkANgAyAGIAMQBjAGIAZABiAGEANQBhADMAYQBlADgALgBkAGwA
-bAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0
-ACAAQAAgACAAMgAwADIANQAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAA
-AAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfADQAMAA1
-ADAAZgBjAGIAZAA5ADUAOABiADQAMwAzADMAOQA2ADIAYgAxAGMAYgBkAGIAYQA1AGEAMwBhAGUA
-OAAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwA0ADAANQAw
-AGYAYwBiAGQAOQA1ADgAYgA0ADMAMwAzADkANgAyAGIAMQBjAGIAZABiAGEANQBhADMAYQBlADgA
-AAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAI
-AAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAASBgAAAAgAAAAGgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAcAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAIgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAk
+OAAAAAAAAEgAAAACAAUANCQAAAQTAAABAAAAAAAAADg3AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACioTMAUAPAEAAAEAABEg5gcAABcX
+cxIAAAoSACDqBwAAHwwfHygSAAAKCzgNAQAAAnsDAAAEbxgAAAYCewMAAAQSAXIBAABwKBMAAAoo
+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
+FgAXIwAAAACGAAAHcgAWAB8jAAAAAIYYigUGABYAPyMAAAAAxgGyBgYAFgBBIwAAAACBAEkABgAW
+AGAjAAAAAMYAhAfXABYAPyMAAAAAxgHABgYAGgC1IwAAAACGGIoF4wAaAMQjAAAAAIYYigXjABsA
+0yMAAAAAgxiKBQYAHADbIwAAAACTCGoF6QAcAAckAAAAAJMI8wDuABwADiQAAAAAkwj/APMAHAAW
+JAAAAACWCAwH+QAdAB0kAAAAAIYYigUGAB0AJSQAAAAAkRiQBf4AHQAAAAEAYwUAAAIAcAYAAAMA
+IQUAAAEAEAMAAAEAEAMAAAEAEAMAAAEAEAMAAAEAEAMAAAEAEAMAAAEAEAMAAAEAEAMAAAEAEAMA
+AAEAEAMAAAEAEAMAAAEAEAMAAAEAEAMAAAEAEAMAAAEAEAMAAAEAEAMAAAEAEAMAAAEAEAMAAAEA
+uAYAAAIAlwUAAAMAqgYAAAQAIQUAAAEAPAcAAAEAPAcAAAEAEAMJAIoFAQARAIoFBgAZAIoFCgAp
+AIoFEAAxAIoFEAA5AIoFEABBAIoFEABJAIoFEABRAIoFEABZAIoFEABhAIoFEABpAIoFBgCpAIoF
+BgDBAIoFFQDRAIoFBgCZAPkCBgCZAAQDBgBxAIoFJQBxADADLADZADMBMQBxACsFNgBxADkDNgB5
+AIoFEADZADADOgDhANwGPgB5AOMGRABxAE0DSQDpALkATgBxANQGVABxAGkDWgCBAIoFYgCBAG8E
+bACBAGcEAQD5AIoFEACBAJAHBgCBAP0GBgCBAAAHcgCZAIoFBgCZADQAegCZAIQGgQChAIoFBgAJ
+AY0AhwAJAaMHkACxAIoFlgDJAIoFBgAuAAsAIgEuABMAKwEuABsASgEuACMAUwEuACsAfAEuADMA
+fAEuADsAfAEuAEMAUwEuAEsAggEuAFMAfAEuAFsAmQFDAGMA4wHjAGsA4wEBAXsA4wFpAnMASgGJ
+AnMASgEbAHYAAwABAAcAEwAIABUAAACbBwIBAABYBAYBAAA9AQoBAAD7AwYBAAC8AA8BAADoAwYB
+AABfAwIBAAAgBAYBAABHAwIBAAAPBAYBAACjAA8BAADTAwYBAACCBQIBAABFBAYBAAA4BQIBAAA1
+BAYBAABhAAYBAAC+AwYBAABuBRMBAAATARgBAAAQBx0BAQAGAAMAAQAHAAUAAQAIAAcAAQAJAAkA
+AQAKAAsAAQALAA0AAQAMAA8AAQANABEAAQAOABMAAQAPABUAAQAQABcAAQARABkAAQASABsAAQAT
+AB0AAQAUAB8AAQAVACEAAQAWACMAAQAXACUAAgAjACcAAgAkACkAAQAlACkAAgAmACsABIAAAAEA
+AAAAAAAAAAAAAAAABwAAAAQAAAAAAAAAAAAAAJ4AQAAAAAAAEAAAAAAAAAAAAAAApwBGBwAAAAAQ
+AAAAAAAAAAAAAACnAGMHAAAAAAQAAAAAAAAAAAAAAJ4AeAQAAAAAAAAAAAEAAADlBQAAAAAASW50
+MzIAU0NfNDA1MGZjYmQ5NThiNDMzMzk2MmIxY2JkYmE1YTNhZTgAPE1vZHVsZT4AR2V0T3V0cHV0
+SUQAbXNjb3JsaWIATWFya091dHB1dHNGaW5pc2hlZABzZXRfSXNXZWVrZW5kAGRlZmF1bHRJbnN0
+YW5jZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBzZXRfTW9udGhOYW1lAHNl
+dF9EYXlOYW1lAEdldERheU5hbWUARGF0ZVRpbWUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlw
+ZWxpbmUAVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAQXBwbGlj
+YXRpb25TZXR0aW5nc0Jhc2UAUGFyc2UAc2V0X0Z1bGxEYXRlAEVkaXRvckJyb3dzYWJsZVN0YXRl
+AENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUA
+RGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRs
+ZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRy
+aWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25B
+dHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RB
+dHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVu
+dHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRp
+YmlsaXR5QXR0cmlidXRlAFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUAdmFsdWUAU3lzdGVtLlJ1bnRp
+bWUuVmVyc2lvbmluZwBUb1N0cmluZwBnZXRfTW9udGgAc2V0X01vbnRoAGdldF9EYXlPZldlZWsA
+c2V0X0RheU9mV2VlawBvcF9MZXNzVGhhbk9yRXF1YWwAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFND
+XzQwNTBmY2JkOTU4YjQzMzM5NjJiMWNiZGJhNWEzYWU4LmRsbABzZXRfSXNXZWVrZW5kX0lzTnVs
+bABzZXRfTW9udGhOYW1lX0lzTnVsbABzZXRfRGF5TmFtZV9Jc051bGwAc2V0X0Z1bGxEYXRlX0lz
+TnVsbABzZXRfTW9udGhfSXNOdWxsAHNldF9EYXlPZldlZWtfSXNOdWxsAHNldF9ZZWFyX0lzTnVs
+bABzZXRfUXVhcnRlcl9Jc051bGwAc2V0X0RhdGVLZXlfSXNOdWxsAFNldE51bGwAc2V0X0l0ZW0A
+U3lzdGVtAHJlc291cmNlTWFuAEJvb2xlYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlv
+bgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBJbnZhbGlkT3BlcmF0aW9u
+RXhjZXB0aW9uAEN1bHR1cmVJbmZvAERhdGVUaW1lRm9ybWF0SW5mbwBPdXRwdXROYW1lTWFwAE91
+dHB1dE1hcABnZXRfWWVhcgBzZXRfWWVhcgBQaXBlbGluZUJ1ZmZlcgBEYXRlU3RyZWFtQnVmZmVy
+AFNjcmlwdEJ1ZmZlcgBnZXRfUmVzb3VyY2VNYW5hZ2VyAHNldF9RdWFydGVyAC5jdG9yAC5jY3Rv
+cgBPdXRwdXRJRHMAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2Vy
+dmljZXMAU3lzdGVtLlJlc291cmNlcwBTQ180MDUwZmNiZDk1OGI0MzMzOTYyYjFjYmRiYTVhM2Fl
+OC5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU0NfNDA1MGZj
+YmQ5NThiNDMzMzk2MmIxY2JkYmE1YTNhZTguUHJvcGVydGllcwBWYXJpYWJsZXMAQnVmZmVyQ29s
+dW1uSW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNldHRpbmdzAENvbm5lY3Rpb25zAEJ1ZmZlcnMA
+RmluaXNoT3V0cHV0cwBDcmVhdGVOZXdPdXRwdXRSb3dzAEFkZERheXMAQ29uY2F0AGdldF9EYXRl
+VGltZUZvcm1hdABPYmplY3QAU2V0RW5kT2ZSb3dzZXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVu
+dABQYXJlbnRDb21wb25lbnQAU2NyaXB0Q29tcG9uZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhT
+Y3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhvc3QAUHJpbWVPdXRwdXQAQWRkUm93
+AHNldF9EYXRlS2V5AGdldF9Bc3NlbWJseQAAEXkAeQB5AHkATQBNAGQAZAAAC3YAaQAtAFYATgAB
+DVQAaADhAG4AZwAgAAGAm0kAcwBOAHUAbABsACAAcAByAG8AcABlAHIAdAB5ACAAYwBhAG4AbgBv
+AHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBsAHMAZQAuACAAQQBzAHMAaQBnAG4AIABhACAA
+dgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8AbAB1AG0AbgAgAGkAbgBzAHQAZQBhAGQALgAA
+FUQAYQB0AGUAUwB0AHIAZQBhAG0AAHFTAEMAXwA0ADAANQAwAGYAYwBiAGQAOQA1ADgAYgA0ADMA
+MwAzADkANgAyAGIAMQBjAGIAZABiAGEANQBhADMAYQBlADgALgBQAHIAbwBwAGUAcgB0AGkAZQBz
+AC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAA2omtzDFqHUqdDxuWR7g+xQAEIAEBCAMgAAEFIAEBEREE
+IAEBDgUgAQERXQkHBBE5ETkSPQgGIAMBCAgIBCABDg4EAAEIDgMgAAgDIAAOBQACDg4OBCAAEnUE
+IAAReQUgAQ4ReQUgARE5DQcAAgIRORE5CSADARJFHQgSSQUgAgEIHAMgAAIDBwEIBgACCBJJDgUg
+AR0ICAgAARKAhRGAiQUgABKAjQcgAgEOEoCNCLd6XFYZNOCJCImEXc2AgMyRAwYSFAMGEhgDBhIM
+AwYSTQMGElkDBhI9AwYSIAQgAQECBSABARE5CyAEAQgdCB0SRRJJBSABARJNBAAAElkEAAASPQUA
+AQESPQQAABIgAwAAAQMoAAgDKAACBCgAETkDKAAOBAgAElkECAASPQQIABIgCAEACAAAAAAAHgEA
+AQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIAAAAAACgBACNTQ180MDUwZmNiZDk1OGI0
+MzMzOTYyYjFjYmRiYTVhM2FlOAAABQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDI1AABJAQAaLk5F
+VEZyYW1ld29yayxWZXJzaW9uPXY0LjcBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5ORVQgRnJh
+bWV3b3JrIDQuNwQBAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNl
+UmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1Ymxp
+Y0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3Vy
+Y2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAABg4AAAAAAAAAAAAADI4AAAAIAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAkOAAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAg
+ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2134,7 +2345,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAGg3AAAAAAAA
+AQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAASAAA
+AFhAAADsAwAAAAAAAAAAAADsAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAAAAAA
+vQTv/gAAAQAAAAEAAAAAAAAAAQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQAAAAB
+AFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBuAAAA
+AAAAALAETAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAKAMAAAEAMAAwADAAMAAw
+ADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBuAHkA
+TgBhAG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABT
+AEMAXwA0ADAANQAwAGYAYwBiAGQAOQA1ADgAYgA0ADMAMwAzADkANgAyAGIAMQBjAGIAZABiAGEA
+NQBhADMAYQBlADgAAAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4AMAAu
+ADAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfADQAMAA1ADAAZgBjAGIA
+ZAA5ADUAOABiADQAMwAzADMAOQA2ADIAYgAxAGMAYgBkAGIAYQA1AGEAMwBhAGUAOAAuAGQAbABs
+AAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAAeQByAGkAZwBoAHQA
+IABAACAAIAAyADAAMgA1AAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBrAHMAAAAA
+AAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBDAF8ANAAwADUA
+MABmAGMAYgBkADkANQA4AGIANAAzADMAMwA5ADYAMgBiADEAYwBiAGQAYgBhADUAYQAzAGEAZQA4
+AC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAQwBfADQAMAA1ADAA
+ZgBjAGIAZAA5ADUAOABiADQAMwAzADMAOQA2ADIAYgAxAGMAYgBkAGIAYQA1AGEAMwBhAGUAOAAA
+ADQACAABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAA4AAgA
+AQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAARDgAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2143,7 +2380,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   </arrayElements>
                 </property>
                 <property
@@ -2179,64 +2416,77 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   dataType="System.String"
                   description="Checksum to match component metedata against compiled codes."
                   name="MetadataChecksum140"
-                  typeConverter="NOTBROWSABLE">2B</property>
+                  typeConverter="NOTBROWSABLE">F6</property>
                 <property
                   dataType="System.String"
                   name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
               </properties>
               <outputs>
                 <output
-                  refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0]"
+                  refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream]"
                   hasSideEffects="true"
-                  name="Output 0">
+                  name="DateStream">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[IsWeekend]"
-                      dataType="bool"
-                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[IsWeekend]"
-                      name="IsWeekend" />
-                    <outputColumn
-                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[Year]"
+                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[DateKey]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[Year]"
-                      name="Year" />
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[DateKey]"
+                      name="DateKey" />
                     <outputColumn
-                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[Quarter]"
-                      dataType="i4"
-                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[Quarter]"
-                      name="Quarter" />
-                    <outputColumn
-                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[Month]"
-                      dataType="i4"
-                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[Month]"
-                      name="Month" />
-                    <outputColumn
-                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[DayOfWeek]"
-                      dataType="i4"
-                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[DayOfWeek]"
-                      name="DayOfWeek" />
-                    <outputColumn
-                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[DayName]"
-                      dataType="wstr"
-                      length="20"
-                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[DayName]"
-                      name="DayName" />
-                    <outputColumn
-                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[FullDate]"
+                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[FullDate]"
                       dataType="dbDate"
-                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[FullDate]"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[FullDate]"
                       name="FullDate" />
                     <outputColumn
-                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[DateKey]"
+                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[DayName]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[DayName]"
+                      name="DayName" />
+                    <outputColumn
+                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[DayOfWeek]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[Output 0].Columns[DateKey]"
-                      name="DateKey" />
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[DayOfWeek]"
+                      name="DayOfWeek" />
+                    <outputColumn
+                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[Month]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[Month]"
+                      name="Month" />
+                    <outputColumn
+                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[MonthName]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[MonthName]"
+                      name="MonthName" />
+                    <outputColumn
+                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[Quarter]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[Quarter]"
+                      name="Quarter" />
+                    <outputColumn
+                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[Year]"
+                      name="Year" />
+                    <outputColumn
+                      refId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[IsWeekend]"
+                      dataType="bool"
+                      lineageId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream].Columns[IsWeekend]"
+                      name="IsWeekend" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
               </outputs>
             </component>
           </components>
+          <paths>
+            <path
+              refId="Package\DFT - Load Dim_Date.Paths[DateStream]"
+              endId="Package\DFT - Load Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="DateStream"
+              startId="Package\DFT - Load Dim_Date\SRC - Generate Date Data.Outputs[DateStream]" />
+          </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5812,19 +6062,19 @@ GROUP BY
     design-time-name="Package\DFT - Load Dim_Cinema">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="152,41.6"
           Id="Package\DFT - Load Dim_Cinema\OLE DB Source"
           TopLeft="225.999996632338,149.999997764826" />
         <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\DFT - Load Dim_Cinema\OLE DB Destination"
-          TopLeft="211.999996840954,405.999993950129" />
-        <NodeLayout
           Size="152.8,41.6"
           Id="Package\DFT - Load Dim_Cinema\Derived Column"
           TopLeft="218.999996736646,274.999995902181" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\DFT - Load Dim_Cinema\OLE DB Destination"
+          TopLeft="211.999996840954,405.999993950129" />
         <EdgeLayout
           Id="Package\DFT - Load Dim_Cinema.Paths[OLE DB Source Output]"
           TopLeft="298.699996684492,191.599997764826">
@@ -5844,7 +6094,9 @@ GROUP BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5866,7 +6118,9 @@ GROUP BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5902,11 +6156,15 @@ GROUP BY
     design-time-name="Package\DFT - Load Dim_Customer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="152,41.6"
           Id="Package\DFT - Load Dim_Customer\OLE DB Source"
           TopLeft="83.333328780201,84.0666660820776" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\DFT - Load Dim_Customer\OLE DB Destination"
+          TopLeft="74.9999959021807,291.199997975032" />
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\DFT - Load Dim_Customer\Derived Column"
@@ -5930,13 +6188,11 @@ GROUP BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\DFT - Load Dim_Customer\OLE DB Destination"
-          TopLeft="74.9999959021807,291.199997975032" />
         <EdgeLayout
           Id="Package\DFT - Load Dim_Customer.Paths[Derived Column Output]"
           TopLeft="160.999995628993,238.333331965274">
@@ -5956,7 +6212,9 @@ GROUP BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5992,11 +6250,49 @@ GROUP BY
     design-time-name="Package\DFT - Load Dim_Date">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="202.4,41.6"
           Id="Package\DFT - Load Dim_Date\SRC - Generate Date Data"
-          TopLeft="99.4999985173345,90.3333319872617" />
+          TopLeft="33.6666687809758,90.3333319872617" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\DFT - Load Dim_Date\OLE DB Destination"
+          TopLeft="325.833315530586,241.799998318553" />
+        <EdgeLayout
+          Id="Package\DFT - Load Dim_Date.Paths[DateStream]"
+          TopLeft="134.866668780976,131.933331987262">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="276.56664674961,109.866666331291"
+              Start="0,0"
+              End="276.56664674961,102.366666331291">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.9333331656456" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,50.9333331656456"
+                    Point2="0,54.9333331656456"
+                    Point3="4,54.9333331656456" />
+                  <mssgle:LineSegment
+                    End="272.56664674961,54.9333331656456" />
+                  <mssgle:CubicBezierSegment
+                    Point1="272.56664674961,54.9333331656456"
+                    Point2="276.56664674961,54.9333331656456"
+                    Point3="276.56664674961,58.9333331656456" />
+                  <mssgle:LineSegment
+                    End="276.56664674961,102.366666331291" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -6004,11 +6300,23 @@ GROUP BY
     design-time-name="Package\DFT - Load Dim_Movie">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="143.2,41.6"
+          Id="Package\DFT - Load Dim_Movie\SRC - Genres"
+          TopLeft="430.833326913416,33.3333328366279" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\DFT - Load Dim_Movie\Merge Join"
+          TopLeft="294.999995604157,229.999996572733" />
         <NodeLayout
           Size="142.4,41.6"
           Id="Package\DFT - Load Dim_Movie\SRC - Movies"
           TopLeft="143.3333311975,36.6666661202908" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\DFT - Load Dim_Movie\Sort 1"
+          TopLeft="447.49999333173,123.333331495523" />
         <NodeLayout
           Size="171.2,41.6"
           Id="Package\DFT - Load Dim_Movie\OLE DB Destination"
@@ -6018,99 +6326,9 @@ GROUP BY
           Id="Package\DFT - Load Dim_Movie\Derived Column"
           TopLeft="281.166662476957,327.999995112419" />
         <NodeLayout
-          Size="143.2,41.6"
-          Id="Package\DFT - Load Dim_Movie\SRC - Genres"
-          TopLeft="430.833326913416,33.3333328366279" />
-        <NodeLayout
           Size="97.6,41.6"
           Id="Package\DFT - Load Dim_Movie\Sort"
           TopLeft="159.166664294899,133.333331346512" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\DFT - Load Dim_Movie\Sort 1"
-          TopLeft="447.49999333173,123.333331495523" />
-        <EdgeLayout
-          Id="Package\DFT - Load Dim_Movie.Paths[OLE DB Source Output]"
-          TopLeft="211.249997746199,78.2666661202908">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,55.066665226221"
-              Start="0,0"
-              End="0,47.566665226221">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.566665226221" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT - Load Dim_Movie.Paths[OLE DB Source Output1]"
-          TopLeft="501.566660122573,74.9333328366279">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48.3999986588955"
-              Start="0,0"
-              End="0,40.8999986588955">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.8999986588955" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\DFT - Load Dim_Movie\Merge Join"
-          TopLeft="294.999995604157,229.999996572733" />
-        <EdgeLayout
-          Id="Package\DFT - Load Dim_Movie.Paths[Sort Output]"
-          TopLeft="207.966664294899,174.933331346512">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="151.833331309259,55.0666652262213"
-              Start="0,0"
-              End="151.833331309259,47.5666652262213">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.5333326131106" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.5333326131106"
-                    Point2="0,27.5333326131106"
-                    Point3="4,27.5333326131106" />
-                  <mssgle:LineSegment
-                    End="147.833331309259,27.5333326131106" />
-                  <mssgle:CubicBezierSegment
-                    Point1="147.833331309259,27.5333326131106"
-                    Point2="151.833331309259,27.5333326131106"
-                    Point3="151.833331309259,31.5333326131106" />
-                  <mssgle:LineSegment
-                    End="151.833331309259,47.5666652262213" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load Dim_Movie.Paths[Sort Output1]"
           TopLeft="500.69999333173,164.933331495523">
@@ -6142,7 +6360,93 @@ GROUP BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load Dim_Movie.Paths[Sort Output]"
+          TopLeft="207.966664294899,174.933331346512">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="151.833331309259,55.0666652262213"
+              Start="0,0"
+              End="151.833331309259,47.5666652262213">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5333326131106" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5333326131106"
+                    Point2="0,27.5333326131106"
+                    Point3="4,27.5333326131106" />
+                  <mssgle:LineSegment
+                    End="147.833331309259,27.5333326131106" />
+                  <mssgle:CubicBezierSegment
+                    Point1="147.833331309259,27.5333326131106"
+                    Point2="151.833331309259,27.5333326131106"
+                    Point3="151.833331309259,31.5333326131106" />
+                  <mssgle:LineSegment
+                    End="151.833331309259,47.5666652262213" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load Dim_Movie.Paths[OLE DB Source Output1]"
+          TopLeft="501.566660122573,74.9333328366279">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48.3999986588955"
+              Start="0,0"
+              End="0,40.8999986588955">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.8999986588955" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load Dim_Movie.Paths[OLE DB Source Output]"
+          TopLeft="211.249997746199,78.2666661202908">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55.066665226221"
+              Start="0,0"
+              End="0,47.566665226221">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.566665226221" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6164,7 +6468,9 @@ GROUP BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6186,7 +6492,9 @@ GROUP BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6235,19 +6543,19 @@ GROUP BY
     design-time-name="Package\DFT - Load Dim_Showtime">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="152,41.6"
           Id="Package\DFT - Load Dim_Showtime\OLE DB Source"
           TopLeft="281.999995797873,161.999997586012" />
         <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\DFT - Load Dim_Showtime\OLE DB Destination"
-          TopLeft="285.999995738268,398.999994054437" />
-        <NodeLayout
           Size="152.8,41.6"
           Id="Package\DFT - Load Dim_Showtime\Derived Column"
           TopLeft="301.999995499849,279.999995827675" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\DFT - Load Dim_Showtime\OLE DB Destination"
+          TopLeft="285.999995738268,398.999994054437" />
         <EdgeLayout
           Id="Package\DFT - Load Dim_Showtime.Paths[OLE DB Source Output]"
           TopLeft="357.999995797873,203.599997586012">
@@ -6279,7 +6587,9 @@ GROUP BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6301,7 +6611,9 @@ GROUP BY
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6334,13 +6646,33 @@ GROUP BY
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="147.2,41.6"
-          Id="Package\DFT - Load Fact_Booking\LKP - DateKey"
-          TopLeft="55.3636460146215,82.0909064776072" />
+          Size="170.4,41.6"
+          Id="Package\DFT - Load Fact_Booking\LKP - CustomerKey"
+          TopLeft="142.424234642525,183.575756299195" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\DFT - Load Fact_Booking\LKP - MovieKey"
+          TopLeft="246.969683475868,285.999998011192" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\DFT - Load Fact_Booking\OLE DB Destination"
+          TopLeft="640.15148017518,503.272724051186" />
         <NodeLayout
           Size="152,41.6"
           Id="Package\DFT - Load Fact_Booking\SRC - Bookings"
           TopLeft="9.87880013416428,9.09090797865054" />
+        <NodeLayout
+          Size="160.8,41.6"
+          Id="Package\DFT - Load Fact_Booking\LKP - CinemaKey"
+          TopLeft="367.424222349068,359.27272477439" />
+        <NodeLayout
+          Size="147.2,41.6"
+          Id="Package\DFT - Load Fact_Booking\LKP - DateKey"
+          TopLeft="55.3636460146215,82.0909064776072" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\DFT - Load Fact_Booking\LKP - ShowtimeKey"
+          TopLeft="468.181792601492,438.060603014387" />
         <EdgeLayout
           Id="Package\DFT - Load Fact_Booking.Paths[OLE DB Source Output]"
           TopLeft="85.8788001341643,50.6909079786505">
@@ -6375,91 +6707,75 @@ GROUP BY
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\DFT - Load Fact_Booking\LKP - CustomerKey"
-          TopLeft="142.424234642525,183.575756299195" />
         <EdgeLayout
-          Id="Package\DFT - Load Fact_Booking.Paths[Lookup Match Output]"
-          TopLeft="128.963646014621,123.690906477607">
+          Id="Package\DFT - Load Fact_Booking.Paths[Lookup Match Output4]"
+          TopLeft="553.381792601492,479.660603014387">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="98.6605886279038,59.8848498215875"
+              EndConnector="172.369687573688,23.6121210367991"
               Start="0,0"
-              End="98.6605886279038,52.3848498215875">
+              End="172.369687573688,16.1121210367991">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.9424249107937" />
+                    End="0,7.80606051839956" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,25.9424249107937"
-                    Point2="0,29.9424249107937"
-                    Point3="4,29.9424249107937" />
+                    Point1="0,7.80606051839956"
+                    Point2="0,11.8060605183996"
+                    Point3="4,11.8060605183996" />
                   <mssgle:LineSegment
-                    End="94.6605886279038,29.9424249107937" />
+                    End="168.369687573688,11.8060605183996" />
                   <mssgle:CubicBezierSegment
-                    Point1="94.6605886279038,29.9424249107937"
-                    Point2="98.6605886279038,29.9424249107937"
-                    Point3="98.6605886279038,33.9424249107937" />
+                    Point1="168.369687573688,11.8060605183996"
+                    Point2="172.369687573688,11.8060605183996"
+                    Point3="172.369687573688,15.8060605183996" />
                   <mssgle:LineSegment
-                    End="98.6605886279038,52.3848498215875" />
+                    End="172.369687573688,16.1121210367991" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="1.13890759520188,34.9424249107937,96.3827734375,11.609375"
+              BoundingBox="37.9934570680938,16.8060605183996,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\DFT - Load Fact_Booking\LKP - MovieKey"
-          TopLeft="246.969683475868,285.999998011192" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\DFT - Load Fact_Booking\LKP - ShowtimeKey"
-          TopLeft="468.181792601492,438.060603014387" />
-        <NodeLayout
-          Size="160.8,41.6"
-          Id="Package\DFT - Load Fact_Booking\LKP - CinemaKey"
-          TopLeft="367.424222349068,359.27272477439" />
         <EdgeLayout
-          Id="Package\DFT - Load Fact_Booking.Paths[Lookup Match Output1]"
-          TopLeft="227.624234642525,225.175756299195">
+          Id="Package\DFT - Load Fact_Booking.Paths[Lookup Match Output3]"
+          TopLeft="447.824222349068,400.87272477439">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="95.7454488333432,60.824241711997"
+              EndConnector="105.557570252425,37.1878782399977"
               Start="0,0"
-              End="95.7454488333432,53.324241711997">
+              End="105.557570252425,29.6878782399977">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.4121208559985" />
+                    End="0,14.5939391199989" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26.4121208559985"
-                    Point2="0,30.4121208559985"
-                    Point3="4,30.4121208559985" />
+                    Point1="0,14.5939391199989"
+                    Point2="0,18.5939391199989"
+                    Point3="4,18.5939391199989" />
                   <mssgle:LineSegment
-                    End="91.7454488333432,30.4121208559985" />
+                    End="101.557570252425,18.5939391199989" />
                   <mssgle:CubicBezierSegment
-                    Point1="91.7454488333432,30.4121208559985"
-                    Point2="95.7454488333432,30.4121208559985"
-                    Point3="95.7454488333432,34.4121208559985" />
+                    Point1="101.557570252425,18.5939391199989"
+                    Point2="105.557570252425,18.5939391199989"
+                    Point3="105.557570252425,22.5939391199989" />
                   <mssgle:LineSegment
-                    End="95.7454488333432,53.324241711997" />
+                    End="105.557570252425,29.6878782399977" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-0.318662302078387,35.4121208559985,96.3827734375,11.609375"
+              BoundingBox="4.58739840746242,23.5939391199989,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6500,78 +6816,74 @@ GROUP BY
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT - Load Fact_Booking.Paths[Lookup Match Output3]"
-          TopLeft="447.824222349068,400.87272477439">
+          Id="Package\DFT - Load Fact_Booking.Paths[Lookup Match Output1]"
+          TopLeft="227.624234642525,225.175756299195">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="105.557570252425,37.1878782399977"
+              EndConnector="95.7454488333432,60.824241711997"
               Start="0,0"
-              End="105.557570252425,29.6878782399977">
+              End="95.7454488333432,53.324241711997">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.5939391199989" />
+                    End="0,26.4121208559985" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14.5939391199989"
-                    Point2="0,18.5939391199989"
-                    Point3="4,18.5939391199989" />
+                    Point1="0,26.4121208559985"
+                    Point2="0,30.4121208559985"
+                    Point3="4,30.4121208559985" />
                   <mssgle:LineSegment
-                    End="101.557570252425,18.5939391199989" />
+                    End="91.7454488333432,30.4121208559985" />
                   <mssgle:CubicBezierSegment
-                    Point1="101.557570252425,18.5939391199989"
-                    Point2="105.557570252425,18.5939391199989"
-                    Point3="105.557570252425,22.5939391199989" />
+                    Point1="91.7454488333432,30.4121208559985"
+                    Point2="95.7454488333432,30.4121208559985"
+                    Point3="95.7454488333432,34.4121208559985" />
                   <mssgle:LineSegment
-                    End="105.557570252425,29.6878782399977" />
+                    End="95.7454488333432,53.324241711997" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="4.58739840746242,23.5939391199989,96.3827734375,11.609375"
+              BoundingBox="-0.318662302078387,35.4121208559985,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\DFT - Load Fact_Booking\OLE DB Destination"
-          TopLeft="640.15148017518,503.272724051186" />
         <EdgeLayout
-          Id="Package\DFT - Load Fact_Booking.Paths[Lookup Match Output4]"
-          TopLeft="553.381792601492,479.660603014387">
+          Id="Package\DFT - Load Fact_Booking.Paths[Lookup Match Output]"
+          TopLeft="128.963646014621,123.690906477607">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="172.369687573688,23.6121210367991"
+              EndConnector="98.6605886279038,59.8848498215875"
               Start="0,0"
-              End="172.369687573688,16.1121210367991">
+              End="98.6605886279038,52.3848498215875">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,7.80606051839956" />
+                    End="0,25.9424249107937" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,7.80606051839956"
-                    Point2="0,11.8060605183996"
-                    Point3="4,11.8060605183996" />
+                    Point1="0,25.9424249107937"
+                    Point2="0,29.9424249107937"
+                    Point3="4,29.9424249107937" />
                   <mssgle:LineSegment
-                    End="168.369687573688,11.8060605183996" />
+                    End="94.6605886279038,29.9424249107937" />
                   <mssgle:CubicBezierSegment
-                    Point1="168.369687573688,11.8060605183996"
-                    Point2="172.369687573688,11.8060605183996"
-                    Point3="172.369687573688,15.8060605183996" />
+                    Point1="94.6605886279038,29.9424249107937"
+                    Point2="98.6605886279038,29.9424249107937"
+                    Point3="98.6605886279038,33.9424249107937" />
                   <mssgle:LineSegment
-                    End="172.369687573688,16.1121210367991" />
+                    End="98.6605886279038,52.3848498215875" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="37.9934570680938,16.8060605183996,96.3827734375,11.609375"
+              BoundingBox="1.13890759520188,34.9424249107937,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6579,25 +6891,61 @@ GROUP BY
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Fact_Booking\LKP - DateKey">
+    design-time-name="Package\DFT - Load Fact_Booking\LKP - CustomerKey">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[Dim_Date]</Value>
+          type="q3:string">[dbo].[Dim_Customer]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load Fact_Booking\LKP - MovieKey">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Dim_Movie]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load Fact_Booking\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -6615,22 +6963,22 @@ GROUP BY
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Fact_Booking\LKP - CustomerKey">
+    design-time-name="Package\DFT - Load Fact_Booking\LKP - CinemaKey">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[Dim_Customer]</Value>
+          type="q3:string">[dbo].[Dim_Cinema]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6638,22 +6986,22 @@ GROUP BY
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Fact_Booking\LKP - MovieKey">
+    design-time-name="Package\DFT - Load Fact_Booking\LKP - DateKey">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[Dim_Movie]</Value>
+          type="q3:string">[dbo].[Dim_Date]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6666,7 +7014,7 @@ GROUP BY
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -6676,7 +7024,7 @@ GROUP BY
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6684,30 +7032,7 @@ GROUP BY
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Fact_Booking\LKP - CinemaKey">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Dim_Cinema]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Fact_Booking\OLE DB Destination">
+    design-time-name="Package\DFT - Load Dim_Date\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

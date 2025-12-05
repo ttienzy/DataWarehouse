@@ -1,0 +1,67 @@
+-- ====================================================================
+-- SCRIPT B: CHÈN DỮ LIỆU MỚI
+-- Chạy trên database: [CinemaDW]
+-- Yêu cầu: Phải chạy Script A (Dọn dẹp) trước.
+-- ====================================================================
+USE [CinemaDW];
+GO
+
+PRINT '--- Starting Data Insertion Process ---';
+
+-- Chèn dữ liệu cho bảng InventoryItems
+PRINT 'Inserting data into [InventoryItems]...';
+BEGIN
+    DECLARE @SampleProducts TABLE (
+        ItemName NVARCHAR(150),
+        ItemCategory NVARCHAR(100),
+        UnitPrice DECIMAL(18,2)
+    );
+
+    INSERT INTO @SampleProducts (ItemName, ItemCategory, UnitPrice) VALUES
+    (N'Bắp Rang Bơ Lớn', N'Bắp Rang', 45000.00),
+    (N'Bắp Rang Phô Mai Vừa', N'Bắp Rang', 40000.00),
+    (N'Coca-Cola Lớn', N'Nước Ngọt', 30000.00),
+    (N'Pepsi Vừa', N'Nước Ngọt', 25000.00),
+    (N'Nước Suối Dasani', N'Nước Suối', 15000.00),
+    (N'Snack Khoai Tây Ostar', N'Snack', 20000.00),
+    (N'Combo 1 Bắp 2 Nước', N'Combo', 89000.00),
+    (N'Combo Gia Đình 2 Bắp 4 Nước', N'Combo', 159000.00);
+
+    DECLARE @CinemaId INT = 1;
+    WHILE @CinemaId <= 10
+    BEGIN
+        INSERT INTO [dbo].[InventoryItems] (CinemaId, ItemName, ItemCategory, UnitPrice, IsActive)
+        SELECT @CinemaId, sp.ItemName, sp.ItemCategory, sp.UnitPrice, 1
+        FROM @SampleProducts sp;
+        SET @CinemaId = @CinemaId + 1;
+    END
+END
+GO
+PRINT '[InventoryItems] data inserted.';
+
+
+-- Chèn dữ liệu cho bảng Staffs
+PRINT 'Inserting data into [Staffs]...';
+BEGIN
+    INSERT INTO [dbo].[Staffs] (CinemaId, EmployeeCode, FullName, Position, Department, Status) VALUES
+    (1, N'NV001', N'Nguyễn Văn An', N'Quản lý Rạp', N'Quản lý', N'Active'),
+    (1, N'NV002', N'Trần Thị Bình', N'Nhân viên Bán vé', N'Bán hàng', N'Active'),
+    (1, N'NV003', N'Lê Văn Cường', N'Nhân viên Bán hàng phụ trợ', N'Bán hàng', N'Active'),
+    (2, N'NV004', N'Phạm Thị Dung', N'Quản lý Rạp', N'Quản lý', N'Active'),
+    (2, N'NV005', N'Hoàng Văn Giang', N'Nhân viên Bán vé', N'Bán hàng', N'Active'),
+    (3, N'NV006', N'Vũ Thị Hương', N'Quản lý Rạp', N'Quản lý', N'Active'),
+    (3, N'NV007', N'Đặng Văn Khoa', N'Nhân viên Bán hàng phụ trợ', N'Bán hàng', N'Active'),
+    (4, N'NV008', N'Ngô Thị Lan', N'Quản lý Rạp', N'Quản lý', N'Active'),
+    (4, N'NV009', N'Bùi Văn Minh', N'Nhân viên Bán vé', N'Bán hàng', N'Active'),
+    (5, N'NV010', N'Hồ Thị Nga', N'Quản lý Rạp', N'Quản lý', N'Active'),
+    (5, N'NV011', N'Dương Văn Long', N'Nhân viên Bán hàng phụ trợ', N'Bán hàng', N'Active'),
+    (6, N'NV012', N'Lý Thị Phương', N'Nhân viên Bán vé', N'Bán hàng', N'Active'),
+    (7, N'NV013', N'Trịnh Văn Quang', N'Nhân viên Bán hàng phụ trợ', N'Bán hàng', N'Active'),
+    (8, N'NV014', N'Mai Thị Sen', N'Nhân viên Bán vé', N'Bán hàng', N'Active'),
+    (9, N'NV015', N'Tô Văn Tùng', N'Nhân viên Bán hàng phụ trợ', N'Bán hàng', N'Active'),
+    (10, N'NV016', N'Vương Thị Uyên', N'Quản lý Rạp', N'Quản lý', N'Active');
+END
+GO
+PRINT '[Staffs] data inserted.';
+
+PRINT '--- Data Insertion Process Finished ---';

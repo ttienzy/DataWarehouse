@@ -1,0 +1,91 @@
+-- ====================================================================
+-- SCRIPT 4: CHÈN DỮ LIỆU GIAO DỊCH BÁN HÀNG PHỤ TRỢ
+-- Chạy trên database: [CinemaDW]
+-- ====================================================================
+USE [CinemaDW];
+GO
+
+PRINT 'Inserting mock data into [ConcessionSales] and [ConcessionSaleItems]...';
+BEGIN
+    -- Xóa dữ liệu cũ để tránh tạo lại nếu chạy script nhiều lần
+    DELETE FROM [dbo].[ConcessionSaleItems];
+    DELETE FROM [dbo].[ConcessionSales];
+
+    -- Khai báo các biến cần thiết
+    DECLARE @NumberOfSales INT = 50; -- Tạo 50 hóa đơn bán hàng
+    DECLARE @Counter INT = 1;
+    DECLARE @RandomCustomerId INT;
+    DECLARE @RandomCinemaId INT;
+    DECLARE @RandomStaffId INT;
+    DECLARE @RandomSaleDate DATETIME2;
+    DECLARE @NewSaleId INT;
+    DECLARE @TotalSaleAmount DECIMAL(18, 2);
+
+    -- Bắt đầu vòng lặp để tạo các hóa đơn (ConcessionSales)
+    WHILE @Counter <= @NumberOfSales
+    BEGIN
+        -- 1. CHỌN NGẪU NHIÊN CÁC THÔNG TIN CHO HÓA ĐƠN
+        
+        -- Chọn một CinemaId ngẫu nhiên từ 1 đến 10
+        SELECT @RandomCinemaId = Id FROM (SELECT Id, ROW_NUMBER() OVER (ORDER BY NEWID()) as rn FROM Cinemas) t WHERE rn = 1;
+
+        -- Chọn một CustomerId ngẫu nhiên từ danh sách khách hàng có sẵn
+        SELECT @RandomCustomerId = Id FROM (SELECT Id, ROW_NUMBER() OVER (ORDER BY NEWID()) as rn FROM Customers) t WHERE rn = 1;
+
+        -- Chọn một StaffId ngẫu nhiên thuộc đúng CinemaId đã chọn ở trên
+        SELECT @RandomStaffId = Id FROM (SELECT Id, ROW_NUMBER() OVER (ORDER BY NEWID()) as rn FROM Staffs WHERE CinemaId = @RandomCinemaId) t WHERE rn = 1;
+        
+        -- Tạo một ngày bán hàng ngẫu nhiên trong vòng 730 ngày qua
+        SELECT @RandomSaleDate = DATEADD(day, -(ABS(CHECKSUM(NEWID())) % 730), GETDATE());
+
+        -- 2. TẠO BẢN GHI HÓA ĐƠN CHÍNH (CONCESSIONSALES)
+        INSERT INTO [dbo].[ConcessionSales] 
+            (CinemaId, CustomerId, StaffId, SaleCode, SaleDate, TotalAmount, DiscountAmount, FinalAmount, PaymentMethod)
+        VALUES 
+            (@RandomCinemaId, @RandomCustomerId, @RandomStaffId, 'SALE' + FORMAT(@Counter, '0000'), @RandomSaleDate, 0, 0, 0, 'Cash'); -- Tạm thời để tổng tiền là 0
+
+        -- Lấy Id của hóa đơn vừa tạo
+        SET @NewSaleId = SCOPE_IDENTITY();
+
+        -- 3. THÊM CÁC SẢN PHẨM CHI TIẾT VÀO HÓA ĐƠN (CONCESSIONSALEITEMS)
+        
+        DECLARE @ItemsPerSale INT = (ABS(CHECKSUM(NEWID())) % 3) + 1; -- Mỗi hóa đơn có từ 1 đến 3 sản phẩm
+        DECLARE @ItemCounter INT = 1;
+        DECLARE @RandomInventoryId INT;
+        DECLARE @ItemUnitPrice DECIMAL(18, 2);
+        DECLARE @ItemQuantity INT;
+
+        SET @TotalSaleAmount = 0;
+
+        WHILE @ItemCounter <= @ItemsPerSale
+        BEGIN
+            -- Chọn một sản phẩm ngẫu nhiên thuộc đúng CinemaId của hóa đơn
+            SELECT TOP 1 @RandomInventoryId = Id, @ItemUnitPrice = UnitPrice 
+            FROM [dbo].[InventoryItems] 
+            WHERE CinemaId = @RandomCinemaId 
+            ORDER BY NEWID();
+
+            -- Số lượng ngẫu nhiên từ 1 đến 2
+            SET @ItemQuantity = (ABS(CHECKSUM(NEWID())) % 2) + 1;
+
+            -- Thêm vào bảng chi tiết
+            INSERT INTO [dbo].[ConcessionSaleItems] (ConcessionSaleId, InventoryId, Quantity, UnitPrice, TotalPrice)
+            VALUES (@NewSaleId, @RandomInventoryId, @ItemQuantity, @ItemUnitPrice, @ItemUnitPrice * @ItemQuantity);
+
+            -- Cộng dồn tổng tiền
+            SET @TotalSaleAmount = @TotalSaleAmount + (@ItemUnitPrice * @ItemQuantity);
+            SET @ItemCounter = @ItemCounter + 1;
+        END
+
+        -- 4. CẬP NHẬT LẠI TỔNG TIỀN CHO HÓA ĐƠN CHÍNH
+        UPDATE [dbo].[ConcessionSales]
+        SET TotalAmount = @TotalSaleAmount,
+            FinalAmount = @TotalSaleAmount -- Giả sử không có chiết khấu
+        WHERE Id = @NewSaleId;
+
+        SET @Counter = @Counter + 1;
+    END
+END
+GO
+
+PRINT 'Mock data for [ConcessionSales] and [ConcessionSaleItems] has been inserted successfully.';

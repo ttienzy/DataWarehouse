@@ -1,0 +1,40 @@
+-- ====================================================================
+-- SCRIPT A (FINAL VERSION): DỌN DẸP VÀ RESET THEO ĐÚNG THỨ TỰ
+-- Chạy trên database: [CinemaDW]
+-- ====================================================================
+USE [CinemaDW];
+GO
+
+PRINT '--- Starting Full Cleanup Process ---';
+
+
+
+PRINT 'Cleaning up transaction details [ConcessionSaleItems]...';
+DELETE FROM [dbo].[ConcessionSaleItems];
+DBCC CHECKIDENT ('[dbo].[ConcessionSaleItems]', RESEED, 0);
+PRINT '[ConcessionSaleItems] table has been cleaned and reset.';
+GO
+
+PRINT 'Cleaning up main transactions [ConcessionSales]...';
+DELETE FROM [dbo].[ConcessionSales];
+DBCC CHECKIDENT ('[dbo].[ConcessionSales]', RESEED, 0);
+PRINT '[ConcessionSales] table has been cleaned and reset.';
+GO
+
+
+
+
+PRINT 'Cleaning up [Staffs] table...';
+-- Không cần vô hiệu hóa khóa ngoại nữa vì bảng ConcessionSales đã trống
+DELETE FROM [dbo].[Staffs];
+DBCC CHECKIDENT ('[dbo].[Staffs]', RESEED, 0);
+PRINT '[Staffs] table has been cleaned and reset.';
+GO
+
+PRINT 'Cleaning up [InventoryItems] table...';
+DELETE FROM [dbo].[InventoryItems];
+DBCC CHECKIDENT ('[dbo].[InventoryItems]', RESEED, 0);
+PRINT '[InventoryItems] table has been cleaned and reset.';
+GO
+
+PRINT '--- Full Cleanup Process Finished Successfully ---';
